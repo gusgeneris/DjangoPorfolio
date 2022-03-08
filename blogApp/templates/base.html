@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">
+                    Gustavo Sandoval
+                </a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#!">
+                            <div class="nav-indice">Blog</div>
+                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/notas.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <div class="nav-indice"> Proyectos</div>
+                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/projects.png"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#!">
+                            <div class="nav-indice"> Sobre mi</div>
+                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/456.png"></div>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    {% block content %} {% endblock %}
+</body>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
+</script>
+<script src="{% static 'js/script.js' %}">
+</script>
+
+
+</html>

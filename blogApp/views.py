@@ -9,4 +9,3 @@ def render_posts(request):
 def post(request,id_post):
     post = get_object_or_404(Post, pk=id_post)
     return render(request,'post.html',{'post': post})
-    

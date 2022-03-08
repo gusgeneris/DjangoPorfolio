@@ -1,8 +1,11 @@
-<h1>Blog</h1>
-<p>{% for post in posts %}
-    {{post.titulo}}
-    {{post.descripcion}}
-    {{post.imagen}}
+{% extends 'base.html' %}{% block title %} Blog {% endblock %} {% block content %}
 
-    {% endfor %}
-</p>
+<h1>Blog</h1>
+{% for post in posts %}
+<div>
+    <a href="post/{{post.id}}">
+        <h2>{{ post.titulo }}</h2>
+    </a>
+    <img src="{{post.imagen.URL }}" alt="{{post.titulo}}" />
+</div>
+{% endfor %} {% endblock %}
