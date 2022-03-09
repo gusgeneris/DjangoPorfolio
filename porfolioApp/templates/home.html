@@ -1,7 +1,30 @@
-<p>
-    {% for project in projects %}
-       {{project.titulo}} 
-       {{project.url}} 
-    {% endfor %}
+{% extends 'layout.html' %} {% load static %}{% block title %} {{post.titulo}} {% endblock %} {% block content %}
 
-</p>
+<header class="row btg-color">
+    <div class="p-4 col-md-4">
+        <img class="img-profile" src="{% static 'img/profile1.jpg' %}" alt="Imagen Personal">
+    </div>
+
+    <div class="col-md-8">
+        <h1 class="p-4 pb-0"> Hola, soy Gustavo</h1>
+        <p class="p-4">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis veniam corporis perferendis amet, aliquam suscipit. Nesciunt, iste expedita sed aut at, mollitia, nostrum voluptate tenetur unde atque repudiandae! Cumque optio possimus alias, ea,
+            ullam corrupti eos nam praesentium deserunt quam mollitia, exercitationem quos? Saepe similique eveniet voluptatum modi nulla, quae dolorem quas nostrum architecto consectetur impedit aspernatur, molestiae magni temporibus aliquam commodi
+            at ratione officiis iste error, vel deserunt ipsum blanditiis. Numquam doloribus amet eum natus facere, quisquam nostrum delectus ea beatae sed ullam optio, iste voluptatum necessitatibus corrupti temporibus laborum eius. Maxime obcaecati
+            rerum aspernatur officiis dolorum, veniam nemo.
+        </p>
+        <a class='btn btn-lg btn-light rounded-7 mx-4' href="{% static 'porfolio/CurriculumSandovalGustavo.pdf'%}" target='_black'> Descargar CV</a>
+    </div>
+</header>
+
+
+<div class=" cont-projects">
+    {% for project in projects %}
+    <div class="project">
+        <h2 class="p-2">{{project.titulo}} </h2>
+        <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
+        <p>{{project.url}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

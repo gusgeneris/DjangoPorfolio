@@ -1,4 +1,43 @@
 @charset "UTF-8";
+.btg-body {
+    background: #1b1b1b;
+    color: white
+}
+
+.btg-color {
+    background: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.cont-projects {
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.project {
+    padding: 15px;
+    width: 250px;
+    border-radius: 7px;
+    background-color: #000000;
+    display: inline;
+    grid-column: auto;
+}
+
+.img-project {
+    width: 200px;
+    height: 200px;
+}
+
+.img-profile {
+    width: 350px;
+    height: auto;
+}
+
 .navigation {
     height: 70px;
     background: #262626;
