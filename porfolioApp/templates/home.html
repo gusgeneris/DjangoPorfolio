@@ -1,6 +1,6 @@
 {% extends 'layout.html' %} {% load static %}{% block title %} {{post.titulo}} {% endblock %} {% block content %}
 
-<header class="row btg-color">
+<header class="row header-home">
     <div class="p-4 col-md-4">
         <img class="img-profile" src="{% static 'img/profile1.jpg' %}" alt="Imagen Personal">
     </div>
@@ -23,7 +23,9 @@
     <div class="project">
         <h2 class="p-2">{{project.titulo}} </h2>
         <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
-        <p>{{project.url}}</p>
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Source </a>
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Demo </a>
+        <p>{{project.descripcion}}</p>
     </div>
     {% endfor %}
 </div>
