@@ -1,8 +1,15 @@
 {% extends 'layout.html' %}{% block title %} {{post.titulo}} {% endblock %} {% block content %}
+<header class="conteiner header-post">
+    <h1>{{ post.titulo }}</h1>
+    <div class="enlace-categoria">
+        {% for categoria in post.categorias.all%}
+        <a href="">{{categoria.nombre}}</a> {% endfor %}
+    </div>
 
-<h1>{{ post.titulo }}</h1>
+</header>
+<hr>
 <div>
-    <p>{{ post.descripcion }}</p>
+    <p>{{ post.descripcion | safe }}</p>
     <img src="{{post.imagen.URL }}" alt="{{post.titulo}}" />
 </div>
 {% endblock %}

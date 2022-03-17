@@ -1,14 +1,27 @@
 {% extends 'layout.html' %}{% block title %} Blog {% endblock %} {% block content %}
+<header class="header-blog ">
+    <h1>BLOG</h1>
+    <p>Artículos técnicos, fragmentos, materiales de referencia y todos los recursos relacionados con el desarrollo que he escrito.</p>
+</header>
+<hr> {% for post in posts %}
+<div class="conteiner post-blog">
+    <a class="enlace-post" href="post/{{post.id}}">
 
-<h1>Blog</h1>
-{% for post in posts %}
-<div>
-    <a href="post/{{post.id}}">
+
         <h2>{{ post.titulo }}</h2>
-        
+
+
+        <!--<p>{{ post.descripcion|truncatechars:100 }}</p>-->
+        <!-- Permite mostrar solo la cantidad de caracteres que necesitamo-->
+        <div>
+            <time>{{ post.date|date:'D,m' }}</time>
+        </div>
+
+        <div class="img-list">
+            {% for categoria in post.categorias.all %}
+            <img src="{{categoria.imagen.url}}" alt=""> {% endfor %}
+        </div>
+
     </a>
-    <p>{{ post.descripcion|truncatechars:100 }}</p> <!-- Permite mostrar solo la cantidad de caracteres que necesitamo-->
-    <p>{{ post.date|date:'D,m, Y' }}</p> 
-    <img src="{{post.imagen.URL }}" alt="{{post.titulo}}" />
 </div>
 {% endfor %} {% endblock %}
