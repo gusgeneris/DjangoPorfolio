@@ -7,10 +7,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'mywebsite.herokuapp.com', 
-    'mywebsite.com'
-]
+ALLOWED_HOSTS = ['porfolio-gustavo-dev.herokuapp.com']
 
 
 DATABASES = {
