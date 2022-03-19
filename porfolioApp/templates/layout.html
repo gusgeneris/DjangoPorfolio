@@ -30,19 +30,19 @@
                     <li>
                         <a href="{% url 'blog' %}">
                             <div class="nav-indice">Blog</div>
-                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/notas.png"></div>
+                            <div class="nav-icon"> <img src="{% static 'img/notas.png'%}"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a href="{% url 'projects' %}">
                             <div class="nav-indice"> Proyectos</div>
-                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/projects.png"></div>
+                            <div class="nav-icon"> <img src="{% static 'img/projects.png' %}"></div>
                         </a>
                     </li>
                     <li>
-                        <a href="#!">
+                        <a href="{% url 'about' %}">
                             <div class="nav-indice"> Sobre mi</div>
-                            <div class="nav-icon"> <img src="../../porfolioApp/static/img/456.png"></div>
+                            <div class="nav-icon"> <img src="{% static 'img/456.png' %}"></div>
                         </a>
                     </li>
                     <!--<li class="">
