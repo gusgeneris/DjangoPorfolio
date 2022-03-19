@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}{% block title %} Blog {% endblock %} {% block content %}
+<header class="header-projects">
+    <h1>PROYECTOS</h1>
+    <p>Artículos técnicos, fragmentos, materiales de referencia y todos los recursos relacionados con el desarrollo.</p>
+</header>
+<hr>
+<div class=" cont-projects">
+    {% for project in projects %}
+    <div class="project">
+        <h2 class="p-2">{{project.titulo}} </h2>
+        <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Source </a>
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Demo </a>
+        <p>{{project.descripcion}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
