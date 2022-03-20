@@ -18,7 +18,6 @@ class Post(models.Model):
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
-    categorias = models.ManyToManyField(Categoria, blank=True)
     
     class Meta:
         verbose_name = 'Post'
