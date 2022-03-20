@@ -21,7 +21,6 @@ DATABASES = {
     }
 }
 
-
 # Amazon S3 Settings
 
 AWS_S3_ACCESS_KEY_ID = config('AWS_S3_ACCESS_KEY_ID')
