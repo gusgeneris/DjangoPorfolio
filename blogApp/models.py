@@ -17,9 +17,8 @@ class Categoria(models.Model):
 class Post(models.Model):
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
-    imagen = models.ImageField(upload_to='blog/imagenes')
     date = models.DateTimeField(auto_now_add=True)
-    categorias = models.ManyToManyField(Categoria, null = 'True')
+    categorias = models.ManyToManyField(Categoria)
     
     class Meta:
         verbose_name = 'Post'
