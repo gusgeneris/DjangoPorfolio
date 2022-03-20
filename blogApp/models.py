@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Categoria(models.Model):
     nombre = models.CharField(max_length=100)
     imagen = models.ImageField(upload_to='blog/imagenes')
@@ -18,6 +19,7 @@ class Post(models.Model):
     titulo = models.CharField(max_length=100)
     descripcion = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
+    categorias = models.ManyToManyField(Categoria)
     
     class Meta:
         verbose_name = 'Post'
