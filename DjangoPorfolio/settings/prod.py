@@ -5,7 +5,7 @@ from .base import *
 
 SECRET_KEY = config('SECRET_KEY')
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['porfolio-gustavo-dev.herokuapp.com']
 
