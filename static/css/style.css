@@ -229,7 +229,7 @@ nav ul li a:visited:not(:only-child):after {
         margin-bottom: 20px;
     }
     .img-profile {
-        width: 350px;
+        width: 250px;
         height: auto;
         margin: 0px;
         margin-top: -20px;
@@ -555,7 +555,7 @@ article {
 /*About*/
 
 .container-about p {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .container-about h2 {
