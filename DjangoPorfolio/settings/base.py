@@ -22,6 +22,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    
+    'collectfast',
+    
     'django.contrib.staticfiles',
     'porfolioApp',
     'blogApp',
@@ -29,7 +32,6 @@ INSTALLED_APPS = [
     'storages',
     'django_extensions',
     'ckeditor',
-    'collectfast',
 ]
 
 MIDDLEWARE = [
