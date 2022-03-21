@@ -87,7 +87,7 @@ LOGGING = {
 
 COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
-"""CACHES = {
+CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
     },
@@ -100,7 +100,7 @@ COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
         },
     },
 }
-COLLECTFAST_CACHE = 'collectfast'"""
+COLLECTFAST_CACHE = 'collectfast'
 
 django_on_heroku.settings(locals(), staticfiles=False)
 #del DATABASES['default']['OPTIONS']['sslmode']
