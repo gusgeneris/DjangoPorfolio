@@ -111,4 +111,3 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'full',
     },
 }
-COLLECTFAST_ENABLED = False
