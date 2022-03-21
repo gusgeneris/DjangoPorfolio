@@ -43,7 +43,7 @@ AWS_HEADERS = {'Access-Control-Allow-Origin': '*'}
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
@@ -85,9 +85,9 @@ LOGGING = {
 
 # Heroku Settings
 
-COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+"""COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
-"""CACHES = {
+CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
     },
