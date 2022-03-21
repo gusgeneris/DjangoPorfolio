@@ -3,13 +3,12 @@
     <h1>{{ post.titulo }}</h1>
     <div class="enlace-categoria">
         {% for categoria in post.categorias.all%}
-        <a href="">{{categoria.nombre}}</a> {% endfor %}
+        <a href="../categoria/{{ categoria.id }}">{{ categoria.nombre}}</a> {% endfor %}
     </div>
 
 </header>
 <hr>
 <div>
     <p>{{ post.descripcion | safe }}</p>
-    <img src="{{post.imagen.URL }}" alt="{{post.titulo}}" />
 </div>
 {% endblock %}

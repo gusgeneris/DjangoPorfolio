@@ -1,12 +1,10 @@
 {% extends 'layout.html' %}{% block title %} Blog {% endblock %} {% block content %}
 <header class="header-blog ">
-    <h1>BLOG</h1>
-    <p>Aqui podras encontrar artículos técnicos, fragmentos, materiales de referencia y distintos recursos relacionados con el desarrollo.</p>
+    <h1>{{ categoria.nombre }}</h1>
 </header>
 <hr> {% for post in posts %}
 <div class="conteiner post-blog">
-    <a class="enlace-post" href="post/{{post.id}}">
-
+    <a class="enlace-post" href="../post/{{post.id}}">
 
         <h2>{{ post.titulo }}</h2>
 

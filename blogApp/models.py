@@ -1,4 +1,5 @@
 from django.db import models
+from ckeditor.fields import RichTextField
 
 # Create your models here.
 
@@ -17,7 +18,7 @@ class Categoria(models.Model):
 
 class Post(models.Model):
     titulo = models.CharField(max_length=100)
-    descripcion = models.TextField()
+    descripcion = RichTextField()
     date = models.DateTimeField(auto_now_add=True)
     categorias = models.ManyToManyField(Categoria)
     

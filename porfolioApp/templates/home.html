@@ -1,41 +1,47 @@
 {% extends 'layout.html' %} {% load static %}{% block title %} {{post.titulo}} {% endblock %} {% block content %}
 
-<header class="row header-home">
-    <div class="p-4 col-md-4">
-        <img class="img-profile" src="{% static 'img/profile-01.jpeg' %}" alt="Imagen Personal">
-    </div>
+<header class="header-home">
+    <div class='conteiner-header-home'>
+        <div class="p-4 continer-img-home">
+            <img class="img-profile" src="{% static 'img/profile-01.jpeg' %}" alt="Imagen Personal">
+        </div>
 
-    <div class="col-md-8">
-        <h1 class="p-4 pb-0"> Hola, soy Gustavo</h1>
-        <p class="p-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis veniam corporis perferendis amet, aliquam suscipit. Nesciunt, iste expedita sed aut at, mollitia, nostrum voluptate tenetur unde atque repudiandae! Cumque optio possimus alias, ea,
-            ullam corrupti eos nam praesentium deserunt quam mollitia, exercitationem quos? Saepe similique eveniet voluptatum modi nulla, quae dolorem quas nostrum architecto consectetur impedit aspernatur, molestiae magni temporibus aliquam commodi
-            at ratione officiis iste error, vel deserunt ipsum blanditiis. Numquam doloribus amet eum natus facere, quisquam nostrum delectus ea beatae sed ullam optio, iste voluptatum necessitatibus corrupti temporibus laborum eius. Maxime obcaecati
-            rerum aspernatur officiis dolorum, veniam nemo.
-        </p>
-        <a class='btn btn-lg btn-light rounded-7 mx-4' href="{% static 'porfolio/CurriculumSandovalGustavo.pdf'%}" target='_black'> Descargar CV</a>
+        <div class="conteiner-description-home col-md-12">
+            <h1 class="p-4 pb-0"> Hola, soy Gustavo</h1>
+            <p class="p-4">
+                Soy Técnico Desarrollador de Software. Me gusta crear proyectos de código abierto y escribir sobre lo que aprendo. Este sitio web es donde pretendo presentar todo aquello que voy aprendiendo y creado.
+            </p>
+            <a class='btn btn-lg btn-light rounded-7 mx-4' href="{% static 'porfolio/CurriculumSandovalGustavoD.pdf'%}" target='_black'> Descargar CV</a>
+        </div>
     </div>
 </header>
 
 
-<!-- 
 <div>
     <h1>
-        Proyectos
+        Publicaciones mas recientes
     </h1>
-    <hr>
+
 </div>
 
+<hr> {% for post in posts %}
+<div class="conteiner post-blog">
+    <a class="enlace-post" href="blog/post/{{post.id}}">
 
-<div class=" cont-projects">
-    {% for project in projects %}
-    <div class="project">
-        <h2 class="p-2">{{project.titulo}} </h2>
-        <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Source </a>
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Demo </a>
-        <p>{{project.descripcion}}</p>
-    </div>
-    {% endfor %}
-</div>-->
-{% endblock %}
+
+        <h2>{{ post.titulo }}</h2>
+
+        <!--<p>{{ post.descripcion|truncatechars:100 }}</p>-->
+        <!-- Permite mostrar solo la cantidad de caracteres que necesitamo-->
+        <div class='date-blog-post'>
+            <time>{{ post.date|date:'D,m' }}</time>
+        </div>
+
+        <div class="img-list">
+            {% for categoria in post.categorias.all %}
+            <img src="{{categoria.imagen.url}}" alt=""> {% endfor %}
+        </div>
+
+    </a>
+</div>
+{% endfor %} {% endblock %}

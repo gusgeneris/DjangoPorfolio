@@ -1,10 +1,12 @@
 from django.shortcuts import render
 from .models import *
+from blogApp.models import Post
 
 # Create your views here.
 def home(request):
     """Home Page"""
-    return render(request,'home.html')
+    posts = Post.objects.order_by('-date')[0:2]
+    return render(request,'home.html',{'posts':posts})
 
 def list_projects(request):
     """List Projects"""

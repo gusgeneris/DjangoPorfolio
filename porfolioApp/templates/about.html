@@ -1,18 +1,119 @@
-{% extends 'layout.html' %}{% block title %} Blog {% endblock %} {% block content %}
+{% extends 'layout.html' %}{% block title %} Sobre mi {% endblock %} {% block content %}
 <header class="header-projects">
     <h1>SOBRE MI</h1>
-    <p>Artículos técnicos, fragmentos, materiales de referencia y todos los recursos relacionados con el desarrollo.</p>
+    <p class="header-about-p">Técnico desarrollador de software, creador de código abierto y articulos relacionados al tema.</p>
 </header>
-<hr>
-<div class=" cont-projects">
-    {% for project in projects %}
-    <div class="project">
-        <h2 class="p-2">{{project.titulo}} </h2>
-        <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Source </a>
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.url}}" target='_black'> Demo </a>
-        <p>{{project.descripcion}}</p>
-    </div>
-    {% endfor %}
+
+
+<div class="container-about">
+    <p>
+        ¡Hola, soy Gustavo! Soy un Técnico desarrollador de software recientemente recibido.
+    </p>
+    <p>
+        Bienvenido a mi lugar en la web para proyectos que he creado, articulo relacionados al desarrollo, reflexiones y cualquier otra cosa que quiera mostrarle al mundo.
+    </p>
+    <p>
+        Soy entusiasta a la hora de resolver problemas y busco siempre ser de ayuda para todo aquel que me necesita. Mi camino en el desarrollo de sistemas comenzó en el 2019 pero mi vida siempre estuvo ligada a la tecnología, desde la reparación de hardware
+        hasta el diseño grafico.
+    </p>
+    <p>
+        Mi sitio no tiene anuncios, ni enlaces de afiliados, ni seguimiento ni análisis, ni publicaciones patrocinadas. Mi única motivación para este sitio es compartir lo que he aprendido con el mundo y documentar notas para mí mismo y, con suerte, conectarme
+        con algunas personas.
+    </p>
 </div>
+
+<div class="container-about">
+    <h2>Tecnologias</h2>
+    <hr>
+    <p>
+        A lo largo de mi aprendizaje trabaje con un caudal de tecnologias, las cuales busco pulir dia a dia:
+    </p>
+    <ul>
+        <h3>Lenguajes:</h3>
+        <li>
+            Html
+        </li>
+        <li>
+            Css
+        </li>
+        <li>
+            Js
+        </li>
+        <li>
+            Python
+        </li>
+        <li>
+            Php
+        </li>
+    </ul>
+    <ul>
+        <h3>Librerias:</h3>
+        <li>
+            Jquery
+        </li>
+        <li>
+            Boostrap
+        </li>
+    </ul>
+    <ul>
+        <h3>Framework:</h3>
+        <li>
+            Django
+        </li>
+    </ul>
+    <ul>
+        <h3>CDM:</h3>
+        <li>
+            WordPress
+        </li>
+    </ul>
+</div>
+
+<div class="container-about">
+    <h2>Conectar</h2>
+    <hr>
+    <p>
+        Puedes conectar con migo por correo electronico a gusgeneris92@gmail.com para decir Hola. Siempre agradesco conocer gente nueva
+    </p>
+    <ul>
+        <li>
+            <a href="html://www.github.com/gusgeneris">GitHub</a>
+        </li>
+        <li>
+            <a href="html://www.linkedin.com/in/gustavo-sandoval">Linkedin</a>
+        </li>
+    </ul>
+</div>
+
+<div class="container-about">
+    <h2>Herriemtas</h2>
+    <hr>
+    <h3>Software</h3>
+    <ul>
+        <li>Este sitio web esta alojado en <b> Heroku </b> y utiliza almacenamiento <b>AWS S3</b></li>
+        <li>Codificacion : <b>Visual Studio Code</b> con el tema <b>Rainbow Theme-Extends</b> </li>
+    </ul>
+
+    <h3>Hardware</h3>
+    <ul>
+        <li>Pc codificador: Hp 16"
+        </li>
+        <ul>
+            <li>
+                Procesador: Corei3
+            </li>
+            <li>
+                Almacenamiento: 1TB
+            </li>
+            <li>
+                Memoria: 8GB
+            </li>
+            <li>
+                GPU: Radeon Graphics
+            </li>
+        </ul>
+    </ul>
+
+</div>
+
 {% endblock %}
