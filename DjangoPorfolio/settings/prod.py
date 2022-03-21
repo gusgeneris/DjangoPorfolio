@@ -43,14 +43,12 @@ AWS_HEADERS = {'Access-Control-Allow-Origin': '*'}
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
 
 STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/static/'
 
 MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/media/'
-
-AWS_PRELOAD_METADATA = True
 
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
@@ -87,7 +85,7 @@ LOGGING = {
 
 # Heroku Settings
 
-"""COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 CACHES = {
     'default': {
@@ -102,7 +100,7 @@ CACHES = {
         },
     },
 }
-COLLECTFAST_CACHE = 'collectfast'"""
+COLLECTFAST_CACHE = 'collectfast'
 
 django_on_heroku.settings(locals(), staticfiles=False)
 #del DATABASES['default']['OPTIONS']['sslmode']
