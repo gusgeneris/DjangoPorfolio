@@ -96,7 +96,7 @@ CACHES = {
         'LOCATION': 'collectfast_cache',
         'TIMEOUT': 60,
         'OPTIONS': {
-            'MAX_ENTRIES': 10000
+            'MAX_ENTRIES': 9999
         },
     },
 }
