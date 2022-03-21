@@ -21,10 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.messages',
-    
-    'collectfast',
-    
+    'django.contrib.messages',    
     'django.contrib.staticfiles',
     'porfolioApp',
     'blogApp',
@@ -114,3 +111,4 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'full',
     },
 }
+COLLECTFAST_ENABLED = False
