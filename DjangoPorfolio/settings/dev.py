@@ -1,6 +1,8 @@
 from .base import *
 from decouple import config
 
+COLLECTFAST_ENABLED = False
+
 SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = True
