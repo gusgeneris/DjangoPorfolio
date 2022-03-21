@@ -84,5 +84,21 @@ LOGGING = {
 }
 
 # Heroku Settings
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    },
+    'collectfast': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'collectfast_cache',
+        'TIMEOUT': 60,
+        'OPTIONS': {
+            'MAX_ENTRIES': 10000
+        },
+    },
+}
+COLLECTFAST_CACHE = 'collectfast'
+
 django_on_heroku.settings(locals(), staticfiles=False)
 #del DATABASES['default']['OPTIONS']['sslmode']

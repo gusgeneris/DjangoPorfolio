@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'storages',
     'django_extensions',
     'ckeditor',
+    'collectfast',
 ]
 
 MIDDLEWARE = [
