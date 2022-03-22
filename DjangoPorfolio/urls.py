@@ -21,7 +21,7 @@ from django.conf import settings
 from porfolioApp import views
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("gadmin/", admin.site.urls),
     path('', views.home, name='home'),
     path('projects/', views.list_projects, name='projects'),
     path('about/', views.about_me, name='about'),
