@@ -11,30 +11,30 @@
             <p class="p-4">
                 Soy Técnico Desarrollador de Software. Me gusta crear proyectos de código y escribir sobre lo que aprendo. Este sitio web es donde pretendo presentar todo aquello que voy aprendiendo y creado.
             </p>
-            <a class='btn btn-lg btn-light rounded-7 mx-4' href="{% static 'porfolio/CurriculumSandovalGustavoD.pdf'%}" target='_black'> Descargar CV</a>
+            <a class='btn btn-lg btn-light rounded-7 mx-4 btn-enlace' href="{% static 'porfolio/CurriculumSandovalGustavoD.pdf'%}" target='_black'> Descargar CV</a>
         </div>
     </div>
 </header>
 
 
-<div>
+<div class='title-post-home'>
     <h1>
         Publicaciones recientes
     </h1>
 
 </div>
 
-<hr> {% for post in posts %}
+<hr class='line-divisor'> {% for post in posts %}
 <div class="conteiner post-blog">
     <a class="enlace-post" href="blog/post/{{post.id}}">
 
 
-        <h2>{{ post.titulo }}</h2>
+        <h2 class="enlace-post-title">{{ post.titulo }}</h2>
 
         <!--<p>{{ post.descripcion|truncatechars:100 }}</p>-->
         <!-- Permite mostrar solo la cantidad de caracteres que necesitamo-->
         <div class='date-blog-post'>
-            <time>{{ post.date|date:'D,m' }}</time>
+            <time >{{ post.date|date:'D,m' }}</time>
         </div>
 
         <div class="img-list">
