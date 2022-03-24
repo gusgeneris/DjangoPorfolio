@@ -5,7 +5,7 @@ from blogApp.models import Post
 # Create your views here.
 def home(request):
     """Home Page"""
-    posts = Post.objects.order_by('-date')[0:2]
+    posts = Post.objects.order_by('-date')[0:6]
     return render(request,'home.html',{'posts':posts})
 
 def list_projects(request):
