@@ -1,21 +1,21 @@
 {% extends 'layout.html' %}{% block title %} Proyectos {% endblock %} {% block content %}
 <header class="header-projects">
-    <h1>PROYECTOS</h1>
-    <p>Algunos aspectos destacados de mis proyectos de código abierto. Véalos todos en GitHub .</p>
+    <h1 class='header-title-project'>PROYECTOS</h1>
+    <p >Algunos aspectos destacados de mis proyectos de código abierto. Véalos todos en GitHub .</p>
 </header>
-<hr>
+<hr class='line-divisor'>
 <div class=" cont-projects">
     {% for project in projects %}
     <div class="project">
-        <h2 class="p-2">{{project.titulo}} </h2>
+        <h2 class="p-2 project-name">{{project.titulo}} </h2>
         <img class="img-project" src="{{project.imagen.url}}" alt="{{project.titulo}}">
         {% if project.git_dir%}
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.git_dir}}" target='_black'> Source </a>
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo btn-enlace' href="{{project.git_dir}}" target='_black'> Source </a>
         {% endif %}
         {% if project.demo_dir%}
-        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo' href="{{project.demo_dir}}" target='_black'> Demo </a>
+        <a class='btn btn-outline-light btn-sm rounded-7 mx-4 btn-repo btn-enlace' href="{{project.demo_dir}}" target='_black'> Demo </a>
         {% endif %}
-        <p>{{project.descripcion}}</p>
+        <p class="description-project">{{project.descripcion}}</p>
     </div>
     {% endfor %}
 </div>
