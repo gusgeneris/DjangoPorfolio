@@ -25,8 +25,14 @@
                     Gustavo Sandoval
                 </a>
                 <button id="switch" class="dark-mode-switch">
-                    <span><i class="fa-solid fa-moon"></i></span>
+                    <span class="switch-sun">
+                        <img src="{% static 'img/moon-switch.png' %}" alt="switch" title="Tema Dark">
+                    </span>
+                    <span class="switch-moon">
+                        <img src="{% static 'img/sun-switch.png' %}" alt="switch" title="Tema Light">
+                   </span>
                 </button>
+
             </div>
             <nav>
                 <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
@@ -52,12 +58,6 @@
                     <li>
 
                     </li>
-
-                    <!--<li class="">
-                        <a href="{% static 'porfolio/CurriculumSandovalGustavo.pdf'%}" target="_blank">
-                            <div class="nav-indice "> Descarga CV </div>
-                        </a>
-                    </li>-->
                 </ul>
             </nav>
         </div>

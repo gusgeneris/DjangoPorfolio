@@ -4,6 +4,15 @@
             color: white
         }
         
+        body.dark-theme .switch-moon {
+            display: none;
+        }
+        
+        .name-nav:focus {
+            outline: none;
+            color: white;
+        }
+        
         .header-home {
             color: rgb(255, 255, 255);
             border-radius: 15px;
@@ -589,6 +598,12 @@
             border: none;
         }
         
+        .dark-mode-switch span img {
+            width: 90%;
+            height: 90%;
+            margin-top: -4px;
+        }
+        
         .dark-mode-switch {
             background: none;
             border: none;
@@ -619,6 +634,10 @@
         }
         
         body.light-theme ul {
+            color: #000000;
+        }
+        
+        body.light-theme ol {
             color: #000000;
         }
         
@@ -762,4 +781,12 @@
         
         body.light-theme .social-icons a.dribbble:hover {
             background-color: #ea4c89
+        }
+        
+        body.light-theme .switch-sun {
+            display: none;
+        }
+        
+        body.light-theme .switch-moon {
+            display: inline-block;
         }
