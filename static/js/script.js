@@ -27,6 +27,7 @@
 const boton = document.querySelector('#switch');
 const configUser = document.body.className;
 const localConfig = localStorage.getItem('tema');
+console.log(localConfig)
 if (localConfig === 'dark') {
     document.body.classList.toggle('dark-theme')
 } else if (localConfig === 'light') {
@@ -34,21 +35,17 @@ if (localConfig === 'dark') {
 }
 boton.addEventListener('click', () => {
     let colorTema;
-    if (configUser.matches) {
+    if (configUser.match('btg-body')) {
         // Entramos con modo oscuro
         document.body.classList.toggle('light-theme')
         colorTema = document.body.classList.contains('light-theme') ? 'light' : 'dark'
+        console.log(colorTema + ' modo oscuro')
 
     } else {
         document.body.classList.toggle('dark-theme')
         colorTema = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+        console.log(colorTema + ' modo cla')
+        console.log(configUser)
     }
     localStorage.setItem('tema', colorTema)
 })
-
-
-
-boton.addEventListener('click', () => {
-    document.body.classList.toggle('light-theme'); //toggle the HTML body the class 'dark'
-    boton.classList.toggle('active'); //toggle the HTML button with the id='switch' with the class 'active'
-});
