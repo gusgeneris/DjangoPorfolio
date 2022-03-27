@@ -8,6 +8,10 @@
             display: none;
         }
         
+        body .btn-dark {
+            display: none;
+        }
+        
         .name-nav:hover {
             outline: none;
             color: white;
@@ -34,7 +38,7 @@
         .conteiner-header-home {
             display: grid;
             margin-top: 90px;
-            margin-bottom: 90px;
+            margin-bottom: 50px;
             grid-template-columns: 1fr 1fr;
         }
         
@@ -49,6 +53,7 @@
         
         .title-post-home h1 {
             color: #8aff47;
+            margin-top: 40px
         }
         
         .conteiner-description-home p {
@@ -588,6 +593,37 @@
         .container-about a:visited {
             color: #ffffff;
         }
+        /*formulario de contacto*/
+        
+        .title-post-home p {
+            font-size: 18px;
+        }
+        
+        .form-group {
+            margin-bottom: 10px;
+        }
+        
+        .conteiner-contact-form {
+            display: block;
+            margin-top: 20px;
+            background-color: rgb(56, 56, 56);
+            border-radius: 7px;
+            padding: 30px;
+        }
+        
+        .form-group input {
+            background-color: #242424;
+            border: 1px solid #525252;
+            border-radius: 5px;
+            color: white;
+        }
+        
+        .form-group textarea {
+            background-color: #242424;
+            border: 1px solid #525252;
+            border-radius: 5px;
+            color: white;
+        }
         /*other theme*/
         
         .dark-mode-switch span {
@@ -676,7 +712,7 @@
         }
         
         body.light-theme .enlace-post-title {
-            color: #000000;
+            color: #303030;
         }
         
         .post-blog {
@@ -686,6 +722,7 @@
         
         .enlace-post-title {
             color: #ffffff;
+            margin-bottom: 0px;
         }
         
         body.light-theme .enlace-post:hover {
@@ -801,4 +838,43 @@
         body.light-theme a:focus,
         body.light-theme a:hover {
             color: #214e70;
+        }
+        /*Form ligth*/
+        
+        body.light-theme .conteiner-contact-form {
+            display: block;
+            margin-top: 20px;
+            background-color: rgb(173, 173, 173);
+            border-radius: 7px;
+            padding: 30px;
+            color: #000000;
+        }
+        
+        body.light-theme .form-group input {
+            background-color: #E3E3E3;
+            border: 1px solid #242424;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+        }
+        
+        body.light-theme .form-group textarea {
+            background-color: #E3E3E3;
+            border: 1px solid #242424;
+            border-radius: 5px;
+            color: rgb(0, 0, 0);
+        }
+        
+        body.light-theme .btn-submit {
+            margin-top: 7px;
+            width: 150px;
+            background-color: #3a3a3a;
+            border: solid 1px #3b3b3b94;
+            color: #ffffff;
+        }
+        
+        body.light-theme .btn-submit:hover {
+            margin-top: 7px;
+            background-color: #17191bad;
+            border: solid 1px #16161694;
+            color: #ffffff;
         }
