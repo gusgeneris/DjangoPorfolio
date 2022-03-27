@@ -791,3 +791,14 @@
         body.light-theme .switch-moon {
             display: inline-block;
         }
+        
+        body.light-theme .enlace-contacto {
+            color: #3680b9;
+            font-size: 16px;
+        }
+        
+        body.light-theme a:active,
+        body.light-theme a:focus,
+        body.light-theme a:hover {
+            color: #214e70;
+        }
