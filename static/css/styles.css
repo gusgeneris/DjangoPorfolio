@@ -38,7 +38,7 @@
         .conteiner-header-home {
             display: grid;
             margin-top: 90px;
-            margin-bottom: 50px;
+            margin-bottom: 49px;
             grid-template-columns: 1fr 1fr;
         }
         
