@@ -12,6 +12,12 @@
             display: none;
         }
         
+        .enlace-empresajob {
+            color: #8aff47;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
         .name-nav:hover {
             outline: none;
             color: white;
@@ -832,6 +838,12 @@
         body.light-theme .enlace-contacto {
             color: #3680b9;
             font-size: 16px;
+        }
+        
+        body.light-theme .enlace-empresajob {
+            color: #3680b9;
+            font-size: 20px;
+            text-decoration: none;
         }
         
         body.light-theme a:active,
