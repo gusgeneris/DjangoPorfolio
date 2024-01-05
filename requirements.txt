@@ -77,7 +77,7 @@ six==1.16.0
 sqlparse==0.4.4
 
 texttable==1.6.4
-ttystatus==0.38
+
 typing_extensions==4.9.0
 ubuntu-advantage-tools==8001
 ubuntu-drivers-common==0.0.0
