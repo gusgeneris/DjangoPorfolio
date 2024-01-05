@@ -22,7 +22,7 @@ docker==5.0.3
 docker-compose==1.29.2
 dockerpty==0.4.1
 docopt==0.6.2
-duplicity==0.8.21.dev10
+
 fasteners==0.14.1
 future==0.18.2
 gyp==0.1
