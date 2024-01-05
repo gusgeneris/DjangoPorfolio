@@ -7,17 +7,17 @@ SECRET_KEY = config('SECRET_KEY')
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['porfolio-gustavo-dev.herokuapp.com']
-
+# //ALLOWED_HOSTS = ['porfolio-gustavo-dev.herokuapp.com']
+# mysql -hmonorail.proxy.rlwy.net -uroot -p51hfAgB416EcfH2BdF2GHbgb-f2Cbhbh --port 57839 --protocol=TCP railway
 
 DATABASES = {
     'default': {
-        'ENGINE':'django.db.backends.postgresql_psycopg2',
-        'NAME':'d73n3peselas7o',
-        'USER':'cegdmndtmxrhiw',
-        'PASSWORD':'6bf85fb4cc094b37c2dead70eba1199bd272a761efe319ee57b394a892c66e88',
-        'HOST':'ec2-34-224-226-38.compute-1.amazonaws.com',
-        'PORT':5432,
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'railway',
+        'USER':'root',
+        'PASSWORD':'51hfAgB416EcfH2BdF2GHbgb-f2Cbhbh',
+        'HOST':'hmonorail.proxy.rlwy.net',
+        'PORT':57839,
     }
 }
 
