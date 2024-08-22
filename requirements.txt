@@ -82,7 +82,6 @@ texttable==1.6.4
 typing_extensions==4.9.0
 
 
-pyyaml===5.4.1
 
 
 
