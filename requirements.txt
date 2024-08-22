@@ -58,8 +58,7 @@ ptyprocess==0.7.0
 pycparser==2.21
 pycups==2.0.1
 Pygments==2.11.2
-pyyaml==6.0
-
+PyJWT==2.3.0
 pymacaroons==0.13.0
 PyNaCl==1.5.0
 pyparsing==2.4.7
@@ -83,6 +82,7 @@ texttable==1.6.4
 typing_extensions==4.9.0
 
 
+pyyaml===5.4.1
 
 
 
