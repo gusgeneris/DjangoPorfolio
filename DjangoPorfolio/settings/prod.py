@@ -107,3 +107,8 @@ COLLECTFAST_CACHE = 'collectfast'
 
 # django_on_heroku.settings(locals(), staticfiles=False)
 #del DATABASES['default']['OPTIONS']['sslmode']
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ensure the `STATICFILES_DIRS` is properly set
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
