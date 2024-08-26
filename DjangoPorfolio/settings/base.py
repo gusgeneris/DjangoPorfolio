@@ -69,19 +69,19 @@ WSGI_APPLICATION = 'DjangoPorfolio.wsgi.application'
 
 #load_dotenv(find_dotenv())
 
-#DATABASES = {'default': dj_database_url.config(default='sqlite3:///db.sqlite', conn_max_age=600)}
+DATABASES = {'default': dj_database_url.config(default='sqlite3:///db.sqlite', conn_max_age=600)}
 
 
-DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.mysql',
-        'NAME':'railway',
-        'USER':'root',
-        'PASSWORD':'51hfAgB416EcfH2BdF2GHbgb-f2Cbhbh',
-        'HOST':'hmonorail.proxy.rlwy.net',
-        'PORT':57839,
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME':'railway',
+#         'USER':'root',
+#         'PASSWORD':'51hfAgB416EcfH2BdF2GHbgb-f2Cbhbh',
+#         'HOST':'hmonorail.proxy.rlwy.net',
+#         'PORT':57839,
+#     }
+# }
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
 
