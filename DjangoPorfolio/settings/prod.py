@@ -23,6 +23,17 @@ ALLOWED_HOSTS = ['djangoporfolio.onrender.com']
 #     }
 # }
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'porfolio_wevg',
+#         'USER': 'porfolio_wevg_user',
+#         'PASSWORD': 'qc1bmYAMtW9MCAirNRcyQY1YJZFLjh32',
+#         'HOST': 'dpg-cr3r11bqf0us73ecvao0-a',
+#         'PORT': '5432',
+#     }
+# }
+
 # Amazon S3 Settings
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')

@@ -124,6 +124,19 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'porfolio_wevg',
+        'USER': 'porfolio_wevg_user',
+        'PASSWORD': 'qc1bmYAMtW9MCAirNRcyQY1YJZFLjh32',
+        'HOST': 'dpg-cr3r11bqf0us73ecvao0-a.oregon-postgres.render.com',
+        'PORT': '5432',
+    }
+}
+
+
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'
 # EMAIL_USE_TLS= True
