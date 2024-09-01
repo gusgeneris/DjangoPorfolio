@@ -96,6 +96,7 @@ paramiko==2.9.3
 passlib==1.7.4
 pexpect==4.8.0
 pgadmin4==8.2
+Pillow>=9.0.0
 
 portalocker==2.8.2
 protobuf==4.25.2
