@@ -109,6 +109,7 @@
         .navigation {
             height: 70px;
             background: #141414;
+            position: fixed;
         }
         
         .brand {
