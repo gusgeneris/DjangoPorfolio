@@ -107,9 +107,13 @@
         }
         
         .navigation {
-            height: 70px;
-            background: #141414;
-            position: fixed;
+            position: fixed; /* Fija la posición de la sección en la ventana */
+            top: 0; /* Ajusta la sección en la parte superior */
+            left: 0; /* Alinea la sección a la izquierda */
+            width: 100%; /* Asegura que la sección ocupe todo el ancho de la ventana */
+            /* background-color: #ffffff; Define el color de fondo (opcional, ajusta según el diseño) */
+            z-index: 1000; /* Asegura que la sección esté sobre otros contenidos */
+            /* border-bottom: 1px solid #ccc; Añade una línea inferior para separación (opcional) */
         }
         
         .brand {
