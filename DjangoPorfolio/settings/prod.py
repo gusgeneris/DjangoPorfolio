@@ -9,7 +9,7 @@ SECRET_KEY = config('SECRET_KEY')
 # print(ROOT_URLCONF)
 DEBUG = False
 
-ALLOWED_HOSTS = ['djangoporfolio.onrender.com']
+ALLOWED_HOSTS = ['djangoporfolio.onrender.com','guss.website', 'www.guss.website']
 # mysql -hmonorail.proxy.rlwy.net -uroot -p51hfAgB416EcfH2BdF2GHbgb-f2Cbhbh --port 57839 --protocol=TCP railway
 
 # DATABASES = {
